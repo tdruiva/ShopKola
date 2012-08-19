@@ -1,0 +1,252 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background: #CCC;
+	margin: 0;
+	padding: 0;
+}
+* {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#FacebookContainer {
+	position: relative;
+	width: 810px;
+	height: 1400px;
+	display: block;
+	background: #FFF;
+	margin: auto;
+}
+.Col1, .Col2, .Col3 {
+	position: absolute;
+	width: 220px;
+	height: 220px;
+	display: block;
+}
+.Col1 {
+	margin: 25px 20px;
+}
+.Col2 {
+	margin: 25px 280px;
+}
+.Col3 {
+	margin: 25px 540px;
+}
+.Col1 .Title, .Col2 .Title, .Col3 .Title {
+	background: #ffef79 url(../images/estrela.png) left no-repeat;
+	width: 225px;
+	height: 25px;
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 2px 0 0 25px;
+}
+.Col1 .Content, .Col2 .Content, .Col3 .Content {
+	margin-top: 35px;
+	width: 250px;
+	height: 330px;
+	display: block;
+}
+.Col1 .Content {
+	background: url(../images/1ano.png) center no-repeat;
+}
+.Col2 .Content {
+	background: url(../images/shopkola.png) top center no-repeat;
+	padding: 115px 0;
+	font-size: 35px;
+	font-weight: bold;
+}
+.Col2 .Content span {
+	color: #f94148;
+}
+.Col3 .Content {
+	font-family: Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 29px;
+}
+.Col3 .Content span {
+	background: #ffef79;
+}
+/*Segunda Linha*/
+.Col4, .Col5, .Col6, .Col7 {
+	position: absolute;
+	width: 175px;
+	height: 235px;
+	display: block;
+	font-size: 14px;
+	text-align: center;
+}
+.Col4 {
+	margin: 430px 20px;
+	background: url(../images/semana1.png) center no-repeat;
+}
+.Col5 {
+	margin: 430px 218px;
+	background: url(../images/semana2.png) center no-repeat;
+}
+.Col6 {
+	margin: 430px 418px;
+	background: url(../images/semana3.png) center no-repeat;
+}
+.Col7 {
+	margin: 430px 615px;
+	background: url(../images/semana4.png) center no-repeat;
+}
+.Col4 .Title, .Col5 .Title, .Col6 .Title, .Col7 .Title {
+	width: 100%;
+	height: 25px;
+	display: block;
+	padding-top: 215px;
+}
+.Col4 .Content, .Col5 .Content, .Col6 .Content, .Col7 .Content {
+	background: url(../images/semanasbg.png) center no-repeat;
+	margin-top: 15px;
+	width: 100%;
+	display: block;
+	font-style: italic;
+	font-size: 12px;
+}
+/*Caixa*/
+.YellowBox {
+	background: #fff164;
+	position: absolute;
+	width: 770px;
+	height: 555px;
+	display: block;
+	margin: 730px 20px;
+}
+.Col8, .Col9 {
+	position: absolute;
+	width: 360px;
+	height: 509px;
+	display: block;
+}
+.Col8 {
+	margin: 25px 30px;
+	/*background: url(../images/yellowboxbg.png) right no-repeat;*/
+}
+.Col9 {
+	margin: 25px 400px;
+}
+.Col8 .Title, .rodape .Title {
+	font-size: 20px;
+}
+.Col8 .Content {
+	width: 350px;
+	font-size: 9px;
+	margin-top: 15px;
+}
+.Col8 .Box1, .Box2, .Box3 {
+	width: 300px;
+	padding: 15px 20px 30px 55px;
+}
+.Col8 .Box1 {
+	background: #fff595 url(../images/box1bg.png) left no-repeat;
+	width: 300px;
+	height: 45px;
+	margin: 45px 0 0 -30px;
+	padding: 25px 20px 15px 55px;
+	font-size: 14px;
+}
+.Col8 .Box1 iframe {
+	position: absolute;
+	width: 60px;
+	height: 25px;
+	margin: -10px 0 10px 97px;
+}
+.Col8 .Box2 {
+	background: #fff595 url(../images/box2bg.png) left no-repeat;
+	height: 75px;
+	margin: 20px 0 0 -30px;
+	font-size: 13px;
+}
+.Col8 .Box2 form {
+	width: 320px;
+	height: 35px;
+	display: block;
+}
+.Col8 .Box2 input {
+	float: left;
+	margin: 16px 0 5px 0;
+	display: block;
+	font-size: 14px;
+}
+.Col8 .Box2 .Emailbox {
+	width: 195px;
+	height: 19px;
+	border: 1px solid #CCC;
+	font-style: italic;
+	padding: 4px;
+}
+.Col8 .Box2 .Enviar {
+	background: #f94148;
+	width: 95px;
+	height: 29px;
+	border: none;
+	font-weight: bold;
+}
+.Col8 .Box2 span, .Col8 .Box3 span {
+	font-size: 10px;
+	clear: both;
+	float: left;
+}
+.Col8 .Box3 {
+	background: #fff595 url(../images/box3bg.png) left no-repeat;
+	width: 300px;
+	height: 60px;
+	margin: 20px 0 15px -30px;
+	padding: 10px 20px 40px 55px;
+	font-size: 13px;
+}
+.Col8 .Box3 a {
+	width: 290px;
+	padding: 5px;
+	margin: 5px 0;
+	text-align: center;
+	display: block;
+	background: #000;
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.Col9 .Box4 {
+	background: url(../images/nestasemana.png) left no-repeat;
+	width: 150px;
+	height: 50px;
+	margin: 0 0 10px 0;
+	padding: 5px 0 5px 220px;
+	font-size: 14px;
+}
+.Col9 .Box4 span {
+	color: #f94148;
+}
+.Col9 .Box5 {
+	background: url(../images/adesivodasemana.jpg) center no-repeat;
+	width: 345px;
+	height: 435px;
+	display: block;
+	border: 2px solid #000;
+}
+.Col9 .Box5:hover {
+	background: url(../images/adesivodasemana2.jpg) center no-repeat;
+}
+.rodape {
+	position: absolute;
+	width: 770px;
+	height: 105px;
+	display: block;
+	margin: 1300px 20px;
+}
+.rodape ul { list-style:none; padding:0px;}
+.rodape li { float:left; padding: 10px 0 0 0}
+.rodape .decorame { display:block; width:120px; height:30px; background:url(../images/rodape_decorame.png) left no-repeat; text-indent:-99999px; margin:0 40px 0 0}
+.rodape .ideafixa { display:block; width:120px; height:30px; background:url(../images/rodape_ideafixa.png) left no-repeat; text-indent:-99999px; margin:0 40px 0 0}
+.rodape .ip { display:block; width:180px; height:30px; background:url(../images/rodape_ip.png) left no-repeat; text-indent:-99999px; margin:0 40px 0 0}
+.rodape .shopkola { display:block; width:195px; height:20px; background:url(../images/rodape_shopkola.png) right no-repeat; margin-right:0; padding: 8px 35px 12px 0;}
+
+label.error {
+    float: left;
+    display: block;
+    position: absolute;
+    color: red;
+    font-size: 11px;
+}

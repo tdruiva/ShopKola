@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Facebook</title>
+
+<link href="http://shopkola.com.br/aniversario/facebook/css/facebook.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('form#promotion').submit(function(e){
+		e.preventDefault();
+		var form = $(this);
+		var post_url = form.attr('action');
+
+		$.ajax({
+			type: 'POST',
+			url: post_url,
+			data: {'email': $('#TxtEmail').val()},
+			type: 'post',
+			datatype: 'json',
+			success: function(data) {
+				data = $.parseJSON(data);
+
+				if (data.status == 'success'){
+					form.fadeOut(100, function(){
+						form.html('<p class="Title">' + data.message + '</p>');
+						form.fadeIn();
+					});
+				}
+				else{
+					if (form.find('label.error').length == 0){
+						$('<label for="TxtEmail" generated="true" class="error">' + data.message + '</label>').insertBefore(form.find('#TxtEmail'));
+					}
+					else{
+						form.find('label.error').text(data.message);
+					}
+				}
+			}
+		});
+	});
+	
+});
+</script>
+</head>
+
+<body>
+<div id="FacebookContainer">
+
+<div class="Col1">
+<div class="Title">
+1 ano de shopkola
+</div>
+<div class="Content">
+&nbsp;
+</div>
+</div>
+
+<div class="Col2">
+<div class="Title">
+1 mês de sorteios
+</div>
+<div class="Content">
+<span>Sorteio</span> de<br> 04 adesivos<br> inéditos,<br> assinados<br> por artistas.
+</div>
+</div>
+
+<div class="Col3">
+<div class="Title">
+1 adesivo por semana
+</div>
+<div class="Content">
+<b>Completamos 01 ano<br> 
+de idade.</b>
+Estamos muito felizes e queremos compartilhar com
+todo mundo. Para comemorar,
+convidamos <b><span>4 artistas</span></b> a criarem
+<b><span>artes inéditas</span></b> para o ShopKola.
+Durante 1 mês vamos sortear essas belezuras aqui na
+ fanpage, <b>1 adesivo por
+ semana</b>. PARTICIPE!
+</div>
+</div>
+
+<div class="Col4">
+<div class="Title">
+1ª Semana<br /> 
+Inspiration Page
+</div>
+<div class="Content">
+sorteio no dia 22.08
+</div>
+</div>
+
+<div class="Col5">
+<div class="Title">
+2ª Semana<br /> 
+Sonsino
+</div>
+<div class="Content">
+sorteio no dia 29.08
+</div>
+</div>
+
+<div class="Col6">
+<div class="Title">
+3ª Semana<br /> 
+Estúdio Colletivo</div>
+<div class="Content">
+sorteio no dia 05.09
+</div>
+</div>
+
+<div class="Col7">
+<div class="Title">
+4ª Semana<br /> 
+Estúdio Kola</div>
+<div class="Content">
+sorteio no dia 12.09
+</div>
+</div>
+
+<div class="YellowBox">
+<div class="Col8">
+
+<div class="Title">
+Como participar? Siga esses passos:
+</div>
+
+<div class="Box1">
+Se ainda não demonstrou seu amor, <br /><b>curta a nossa fanpage</b>:
+<!-- Facebook -->
+<script type="text/javascript"></script>
+<script type="text/javascript">// <![CDATA[
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+// ]]></script>
+<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fshopkolafan&amp;send=false&amp;layout=standard&amp;width=60&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=trebuchet+ms&amp;height=25" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+</div>
+<div class="Box2">
+Quero concorrer a um adesivo de parede da ShopKola!
+
+ <form action="form.php" id="promotion" method="post">
+   <input class="Emailbox required email"  type="text" name="TxtEmail" id="TxtEmail" value=" Cadastrar E-mail" onblur="if(this.value == '') { this.value=' Cadastrar E-mail'}" onfocus="if (this.value == ' Cadastrar E-mail') {this.value=''}">
+  <input class="Enviar" type="submit" class="submit" value="Participar!">
+  <span>* e-mail obrigatório</span>
+ </form>
+<!--
+<form action="FacebookForm.php" method="post">
+<input class="Emailbox" type="text" name="Email" value=" Email" onblur="if(this.value == '') { this.value=' Email'}" onfocus="if (this.value == ' Email') {this.value=''}"/><input class="Enviar" type="submit" name="Submit" value="Enviar" />
+</form>-->
+</div>
+
+<!--
+<div class="Box3">
+Clique no link abaixo para incluir* seu nome na lista do sorteio:
+<a href="#" target="_blank">incluir meu nome no app do sorteie.me</a>
+</div>
+-->
+
+<div class="Title">
+Pronto,você já está concorrendo.<br />
+Boa sorte!
+</div>
+<div class="Content">
+* Os sorteios serão efetuados nos dia 25.06 / 25.06  / 25.06  / 25.06 através da ferramenta sorteie.me. Os resultados serão publicados no post da promoção.
+</div>
+</div>
+
+<div class="Col9">
+
+<div class="Box4"><b>Ele Ela</b>
+<br />
+<span>80x54 cm</span><br/>
+by <b>Inspiration Page</b>
+</div>
+
+<div class="Box5">
+&nbsp;
+</div>
+
+
+
+</div>
+
+
+</div>
+
+<div class="rodape">
+<span class="Title">Apoio:</span>
+<ul>
+<a href="http://www.decora.me" target="_blank" title="Decora.me"><li class="decorame">Decora.me</li></a>
+<a href="http://www.ideafixa.com" target="_blank" title="IdeaFixa"><li class="ideafixa">IdeaFixa</li></a>
+<a href="http://www.facebook.com/inspirationpage" target="_blank" title="Inspiration Page"><li class="ip">Inspiration Page</li></a>
+<a href="http://www.shopkola.com.br" target="_blank" title="ShopKola" style="text-decoration:none; color:#000;"><li class="shopkola"><b>www.shopkola.com.br</b></li></a>
+</ul>
+</div>
+
+
+</div>
+</body>
+</html>
